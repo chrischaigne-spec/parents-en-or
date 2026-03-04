@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="400" viewBox="0 0 320 400">
+  <rect width="320" height="400" fill="#F5F0EB"/>
+  <circle cx="160" cy="150" r="60" fill="#D9AD9B" opacity="0.25"/>
+  <circle cx="160" cy="150" r="40" fill="#D9AD9B" opacity="0.15"/>
+  <path d="M120 250 Q160 220 200 250 L200 320 Q160 340 120 320 Z" fill="#7D8C7C" opacity="0.15"/>
+  <text x="160" y="370" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="14" fill="#6B6B6B">Photo de Sandra</text>
+</svg>

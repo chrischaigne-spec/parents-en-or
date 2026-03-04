@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FCF9F5"/>
+  <rect x="520" y="180" width="160" height="120" rx="12" fill="#D9AD9B" opacity="0.2" stroke="#D9AD9B" stroke-width="2" stroke-opacity="0.3"/>
+  <rect x="540" y="200" width="120" height="80" rx="4" fill="#D9AD9B" opacity="0.1"/>
+  <rect x="575" y="300" width="50" height="8" rx="4" fill="#D9AD9B" opacity="0.25"/>
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="36" fill="#D9AD9B">Numérique</text>
+  <text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="18" fill="#6B6B6B">Parents en Or</text>
+</svg>
