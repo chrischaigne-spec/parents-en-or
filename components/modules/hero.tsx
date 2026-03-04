@@ -54,8 +54,18 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Colonne illustration */}
-          <div className="flex justify-center md:-mr-12 md:justify-end lg:-mr-20">
+          {/* Colonne illustration — bords fondus dans le fond */}
+          <div
+            className="flex justify-center md:-mr-12 md:justify-end lg:-mr-20"
+            style={{
+              maskImage:
+                "linear-gradient(to right, black 70%, transparent 100%), linear-gradient(to bottom, black 70%, transparent 100%)",
+              maskComposite: "intersect",
+              WebkitMaskImage:
+                "linear-gradient(to right, black 70%, transparent 100%), linear-gradient(to bottom, black 70%, transparent 100%)",
+              WebkitMaskComposite: "destination-in",
+            }}
+          >
             <Image
               src="/images/hero-famille.webp"
               alt="Illustration aquarelle d'une famille de dos — une maman brune, un papa et leurs deux garçons — marchant main dans la main sur un chemin de campagne fleuri au coucher du soleil"
