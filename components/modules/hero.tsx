@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden py-12 md:py-20">
+    <section className="relative overflow-hidden bg-[#F8F9F4] py-12 md:py-20">
       {/* Formes décoratives d'arrière-plan */}
       <div
         className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-rose-light/20 blur-3xl"
@@ -54,23 +54,23 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Colonne illustration — bords fondus dans le fond */}
+          {/* Colonne illustration — masque doux sur le coin haut-droit */}
           <div
             className="flex justify-center md:-mr-12 md:justify-end lg:-mr-20"
             style={{
               maskImage:
-                "linear-gradient(to right, black 70%, transparent 100%), linear-gradient(to bottom, black 70%, transparent 100%)",
+                "linear-gradient(to bottom, transparent, black 15%), linear-gradient(to left, transparent, black 10%)",
               maskComposite: "intersect",
               WebkitMaskImage:
-                "linear-gradient(to right, black 70%, transparent 100%), linear-gradient(to bottom, black 70%, transparent 100%)",
+                "linear-gradient(to bottom, transparent, black 15%), linear-gradient(to left, transparent, black 10%)",
               WebkitMaskComposite: "destination-in",
             }}
           >
             <Image
               src="/images/hero-famille.webp"
-              alt="Illustration aquarelle d'une famille de dos — une maman brune, un papa et leurs deux garçons — marchant main dans la main sur un chemin de campagne fleuri au coucher du soleil"
+              alt="Illustration aquarelle d'une famille de dos — une maman, un papa et leurs deux garçons — marchant main dans la main sur un chemin de campagne fleuri au coucher du soleil"
               width={1200}
-              height={670}
+              height={634}
               sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full"
               priority
