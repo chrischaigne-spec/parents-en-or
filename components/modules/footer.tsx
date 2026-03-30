@@ -97,14 +97,22 @@ export function Footer() {
             &copy; 2019–{currentYear} {siteConfig.name} — Marque
             d&eacute;pos&eacute;e. Tous droits r&eacute;serv&eacute;s.
           </p>
-          <p className="inline-flex items-center gap-1">
-            Fait avec{" "}
-            <Heart
-              className="h-3.5 w-3.5 fill-rose text-rose"
-              aria-hidden="true"
-            />{" "}
-            par Sandra
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/mentions-legales"
+              className="transition-colors hover:text-sage"
+            >
+              Mentions légales
+            </Link>
+            <p className="inline-flex items-center gap-1">
+              Fait avec{" "}
+              <Heart
+                className="h-3.5 w-3.5 fill-rose text-rose"
+                aria-hidden="true"
+              />{" "}
+              par Sandra
+            </p>
+          </div>
         </div>
       </div>
     </footer>

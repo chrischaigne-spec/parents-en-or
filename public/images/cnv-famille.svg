@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#FCF9F5"/>
-  <path d="M600 340 C600 280, 520 240, 520 290 C520 330, 600 370, 600 370 C600 370, 680 330, 680 290 C680 240, 600 280, 600 340Z" fill="#D9AD9B" opacity="0.3" transform="translate(0,-60) scale(1.5) translate(-200,-80)"/>
-  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="36" fill="#D9AD9B">Communication</text>
-  <text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="18" fill="#6B6B6B">Parents en Or</text>
-</svg>

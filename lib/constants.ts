@@ -17,6 +17,7 @@ export const siteConfig = {
       "https://www.youtube.com/channel/UC7qajWE_TDWmz0PuFANp7fg",
     spotify: "https://open.spotify.com/show/parentsenor",
     apple: "https://podcasts.apple.com/podcast/parents-en-or",
+    soundcloud: "https://soundcloud.com/parentsenor",
   },
 } as const;
 
