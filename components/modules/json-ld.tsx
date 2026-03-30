@@ -2,6 +2,41 @@ import { siteConfig } from "@/lib/constants";
 
 /** Données structurées JSON-LD pour le SEO (Schema.org) */
 
+export function PersonJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Sandra",
+    url: `${siteConfig.url}/a-propos`,
+    image: `${siteConfig.url}/images/sandra-portrait.webp`,
+    description: siteConfig.author.description,
+    jobTitle: "Créatrice de contenu en parentalité",
+    knowsAbout: [
+      "Développement de l'enfant",
+      "Parentalité bienveillante",
+      "Esprit critique",
+      "Immunologie",
+      "Microbiologie",
+    ],
+    sameAs: [
+      siteConfig.links.instagram,
+      siteConfig.links.pinterest,
+      siteConfig.links.youtube,
+    ],
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/a-propos`,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export function WebsiteJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
