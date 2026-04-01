@@ -28,7 +28,23 @@
       "Bash(npx next start:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit — Site Parents en Or \\(Next.js 16\\)\n\nSite complet avec page d''accueil, 10 articles \\(5 Tier 1 SEO\\), pages blog,\nà propos, contact. Hero aquarelle famille, palette vert sauge + rose poudré.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npx vercel:*)",
+      "Bash(git commit:*)",
+      "Bash(node:*)",
+      "Bash(timeout:*)",
+      "Bash(npx tsc:*)",
+      "Bash(if exist \"C:\\\\Users\\\\Chris\\\\Desktop\\\\Projets Web\\\\Parents-en-or\\\\temp-article.html\" del \"C:\\\\Users\\\\Chris\\\\Desktop\\\\Projets Web\\\\Parents-en-or\\\\temp-article.html\")",
+      "Bash(npm ls:*)",
+      "Bash(git status:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:kinoko.fr)",
+      "Bash(git rm:*)",
+      "WebFetch(domain:www.alioze.com)"
     ]
   }
 }
