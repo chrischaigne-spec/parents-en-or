@@ -23,7 +23,7 @@ const pillars = [
     icon: BookOpen,
     title: "Des outils concrets",
     description:
-      "Articles, ateliers, podcasts : des ressources accessibles pour transformer votre quotidien de parent, pas à pas.",
+      "Articles et ateliers : des ressources accessibles pour transformer votre quotidien de parent, pas à pas.",
   },
 ];
 

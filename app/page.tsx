@@ -2,7 +2,6 @@ import { AboutPreview } from "@/components/modules/about-preview";
 import { ArticleCard } from "@/components/modules/article-card";
 import { Hero } from "@/components/modules/hero";
 import { MissionSection } from "@/components/modules/mission-section";
-import { PodcastCta } from "@/components/modules/podcast-cta";
 import { Button } from "@/components/ui/button";
 import { getLatestArticles } from "@/lib/articles";
 import { ArrowRight } from "lucide-react";
@@ -65,8 +64,6 @@ export default function HomePage() {
       {/* ─── 4. Qui suis-je ? — Aperçu storytelling ─── */}
       <AboutPreview />
 
-      {/* ─── 5. Podcast CTA — Bannière verte ─── */}
-      <PodcastCta />
     </>
   );
 }

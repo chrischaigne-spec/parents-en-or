@@ -1,0 +1,288 @@
+{
+  "redirects": [
+    {
+      "source": "/articles/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/articles",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/qui-suis-je-presentation/",
+      "destination": "/a-propos",
+      "statusCode": 301
+    },
+    {
+      "source": "/qui-suis-je-presentation",
+      "destination": "/a-propos",
+      "statusCode": 301
+    },
+    {
+      "source": "/cgv-cgu-mentionslegales/",
+      "destination": "/mentions-legales",
+      "statusCode": 301
+    },
+    {
+      "source": "/cgv-cgu-mentionslegales",
+      "destination": "/mentions-legales",
+      "statusCode": 301
+    },
+    {
+      "source": "/les-ateliers-et-ressources-en-ligne/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/les-ateliers-et-ressources-en-ligne",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/je-vous-aide/",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/je-vous-aide",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/regressions-du-sommeil-mythe-ou-realite/",
+      "destination": "/blog/regressions-du-sommeil-mythe-ou-realite",
+      "statusCode": 301
+    },
+    {
+      "source": "/regressions-du-sommeil-mythe-ou-realite",
+      "destination": "/blog/regressions-du-sommeil-mythe-ou-realite",
+      "statusCode": 301
+    },
+    {
+      "source": "/dois-je-feliciter-mes-enfants-que-dit-la-science/",
+      "destination": "/blog/feliciter-ses-enfants-que-dit-la-science",
+      "statusCode": 301
+    },
+    {
+      "source": "/dois-je-feliciter-mes-enfants-que-dit-la-science",
+      "destination": "/blog/feliciter-ses-enfants-que-dit-la-science",
+      "statusCode": 301
+    },
+    {
+      "source": "/votre-enfant-vit-mal-le-fait-daller-a-lecole-les-6-solutions/",
+      "destination": "/blog/enfant-malheureux-ecole-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/votre-enfant-vit-mal-le-fait-daller-a-lecole-les-6-solutions",
+      "destination": "/blog/enfant-malheureux-ecole-solutions",
+      "statusCode": 301
+    },
+    {
+      "source": "/larrivee-dun-bebe-quand-laine-devient-jaloux/",
+      "destination": "/blog/arrivee-bebe-jalousie-aine",
+      "statusCode": 301
+    },
+    {
+      "source": "/larrivee-dun-bebe-quand-laine-devient-jaloux",
+      "destination": "/blog/arrivee-bebe-jalousie-aine",
+      "statusCode": 301
+    },
+    {
+      "source": "/cacher-notre-stress-a-nos-enfants/",
+      "destination": "/blog/cacher-stress-enfants",
+      "statusCode": 301
+    },
+    {
+      "source": "/cacher-notre-stress-a-nos-enfants",
+      "destination": "/blog/cacher-stress-enfants",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/la-nudite-dans-la-famille-bonne-ou-mauvaise-idee/",
+      "destination": "/blog/nudite-famille-bonne-mauvaise-idee",
+      "statusCode": 301
+    },
+    {
+      "source": "/la-nudite-dans-la-famille-bonne-ou-mauvaise-idee",
+      "destination": "/blog/nudite-famille-bonne-mauvaise-idee",
+      "statusCode": 301
+    },
+    {
+      "source": "/le-bain-des-enfants-quelle-frequence/",
+      "destination": "/blog/bain-enfants-quelle-frequence",
+      "statusCode": 301
+    },
+    {
+      "source": "/le-bain-des-enfants-quelle-frequence",
+      "destination": "/blog/bain-enfants-quelle-frequence",
+      "statusCode": 301
+    },
+    {
+      "source": "/poser-un-cadre-et-des-limites-ma-menee-a-lepuisement/",
+      "destination": "/blog/cadre-limites-epuisement-parental",
+      "statusCode": 301
+    },
+    {
+      "source": "/poser-un-cadre-et-des-limites-ma-menee-a-lepuisement",
+      "destination": "/blog/cadre-limites-epuisement-parental",
+      "statusCode": 301
+    },
+    {
+      "source": "/je-pose-des-limites-mais-pourquoi-ca-ne-suffit-pas/",
+      "destination": "/blog/poser-limites-enfants-pourquoi-insuffisant",
+      "statusCode": 301
+    },
+    {
+      "source": "/je-pose-des-limites-mais-pourquoi-ca-ne-suffit-pas",
+      "destination": "/blog/poser-limites-enfants-pourquoi-insuffisant",
+      "statusCode": 301
+    },
+    {
+      "source": "/les-vagues-des-emotions/",
+      "destination": "/blog/vagues-emotions-enfants-outil",
+      "statusCode": 301
+    },
+    {
+      "source": "/les-vagues-des-emotions",
+      "destination": "/blog/vagues-emotions-enfants-outil",
+      "statusCode": 301
+    },
+    {
+      "source": "/comment-un-lien-fort-avec-vos-enfants-peut-resoudre-tous-les-problemes/",
+      "destination": "/blog/lien-fort-enfants-resoudre-problemes",
+      "statusCode": 301
+    },
+    {
+      "source": "/comment-un-lien-fort-avec-vos-enfants-peut-resoudre-tous-les-problemes",
+      "destination": "/blog/lien-fort-enfants-resoudre-problemes",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/poutre-du-temps-:path*",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/etiquettes-pour-poutre-du-temps:path*",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+
+    {
+      "source": "/category/:path*",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/a-propos",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/:path*",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ressources-gratuites/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/ressources-gratuites",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite-gratuits/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite-gratuits",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite-bases-sur-la-science/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite-bases-sur-la-science",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers-parentalite",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ateliers/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/interviews/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/interviews",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/que-dit-la-science/",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/que-dit-la-science",
+      "destination": "/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq-soutien-parental-individuel/",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq-soutien-parental-individuel",
+      "destination": "/contact",
+      "statusCode": 301
+    }
+  ]
+}

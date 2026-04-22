@@ -7,7 +7,6 @@ import {
   GraduationCap,
   Heart,
   Instagram,
-  Mic,
   Pin,
   Sparkles,
   Youtube,
@@ -160,14 +159,14 @@ export default function AboutPage() {
             <p className="mt-4">
               Je mets à votre disposition mes connaissances à travers du contenu
               gratuit ({" "}
-              <Link href="/podcasts" className="font-medium text-sage underline underline-offset-2 hover:text-sage/80">
-                podcasts
-              </Link>
-              ,{" "}
               <Link href="/blog" className="font-medium text-sage underline underline-offset-2 hover:text-sage/80">
                 articles
               </Link>
-              ) et payant (ateliers, soutien personnalisé).
+              ) et payant (
+              <Link href="/ateliers" className="font-medium text-sage underline underline-offset-2 hover:text-sage/80">
+                ateliers
+              </Link>
+              , soutien personnalisé).
             </p>
           </div>
 
@@ -366,11 +365,11 @@ export default function AboutPage() {
                 YouTube
               </a>
               <Link
-                href="/podcasts"
+                href="/blog"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-text-light shadow-sm transition-colors hover:text-sage"
               >
-                <Mic className="h-4 w-4" aria-hidden="true" />
-                Podcasts
+                <BookOpen className="h-4 w-4" aria-hidden="true" />
+                Articles
               </Link>
             </div>
           </div>
@@ -431,9 +430,17 @@ export default function AboutPage() {
             &laquo;&nbsp;Allons à l&apos;essentiel. Qu&apos;est-ce qui compte
             vraiment pour vous&nbsp;?&nbsp;&raquo;
           </p>
-          <Link href="/contact" className="mt-6 inline-block">
-            <Button size="lg">Me contacter</Button>
-          </Link>
+          <a
+            href={siteConfig.links.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block"
+          >
+            <Button size="lg">
+              <Instagram className="mr-2 h-4 w-4" aria-hidden="true" />
+              Me suivre sur Instagram
+            </Button>
+          </a>
         </div>
       </div>
     </section>
