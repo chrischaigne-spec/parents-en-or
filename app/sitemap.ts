@@ -6,35 +6,40 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
 
+  // Date du dernier article publié (pour homepage et page blog)
+  const latestArticleDate = articles
+    .map((a) => new Date(a.publishedAt))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
+
   // Pages statiques
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: latestArticleDate,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
+      lastModified: latestArticleDate,
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/a-propos`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-15"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/ateliers`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-04-20"),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/mentions-legales`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-02-01"),
       changeFrequency: "yearly",
       priority: 0.3,
     },

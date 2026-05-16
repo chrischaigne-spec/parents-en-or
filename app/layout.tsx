@@ -83,6 +83,14 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-cream font-body text-text antialiased">
+        {/* Skip link — accessibilité clavier (WCAG 2.4.1) */}
+        <a
+          href="#contenu-principal"
+          className="absolute -top-16 left-4 z-[100] rounded-md bg-sage px-4 py-2 text-white focus:top-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
+        >
+          Sauter au contenu principal
+        </a>
+
         {/* Données structurées JSON-LD globales */}
         <WebsiteJsonLd />
 

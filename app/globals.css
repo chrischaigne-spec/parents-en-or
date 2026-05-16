@@ -46,6 +46,16 @@ a, button {
   transition: all 0.2s ease-in-out;
 }
 
+/* ─── Respect des préférences de mouvement (WCAG 2.3.3) ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ═══════════════════════════════════════════════════════════════
    TYPOGRAPHIE ARTICLE — Styles principaux
    ═══════════════════════════════════════════════════════════════ */

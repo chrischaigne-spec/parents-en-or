@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Articles et conseils sur la parentalité bienveillante : sommeil, émotions, communication, éducation positive et bien-être familial.",
+  alternates: {
+    canonical: "https://parents-en-or.fr/blog",
+  },
+  openGraph: {
+    title: "Blog — Parents en Or",
+    description:
+      "Articles sur la parentalité bienveillante fondés sur la science : sommeil, émotions, éducation positive et bien-être familial.",
+    url: "https://parents-en-or.fr/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — Parents en Or",
+    description:
+      "Articles sur la parentalité bienveillante fondés sur la science : sommeil, émotions, éducation positive et bien-être familial.",
+  },
 };
 
 export default function BlogPage() {

@@ -42,12 +42,12 @@
     },
     {
       "source": "/je-vous-aide/",
-      "destination": "/contact",
+      "destination": "/a-propos",
       "statusCode": 301
     },
     {
       "source": "/je-vous-aide",
-      "destination": "/contact",
+      "destination": "/a-propos",
       "statusCode": 301
     },
 
@@ -276,12 +276,12 @@
     },
     {
       "source": "/faq-soutien-parental-individuel/",
-      "destination": "/contact",
+      "destination": "/a-propos",
       "statusCode": 301
     },
     {
       "source": "/faq-soutien-parental-individuel",
-      "destination": "/contact",
+      "destination": "/a-propos",
       "statusCode": 301
     }
   ]

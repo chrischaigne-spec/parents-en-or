@@ -5,11 +5,13 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef<HTMLDivElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   // Fermer le menu mobile lors d'un changement de route
   useEffect(() => {
@@ -23,6 +25,42 @@ export function Navbar() {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
+
+  // Focus trap + fermeture avec Escape
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (!isOpen || !menuRef.current) return;
+
+      if (e.key === "Escape") {
+        setIsOpen(false);
+        toggleRef.current?.focus();
+        return;
+      }
+
+      if (e.key === "Tab") {
+        const focusable = menuRef.current.querySelectorAll<HTMLElement>(
+          "a, button"
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    },
+    [isOpen]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
 
   return (
     <>
@@ -60,10 +98,12 @@ export function Navbar() {
 
           {/* Bouton menu mobile */}
           <button
+            ref={toggleRef}
             type="button"
             onClick={() => setIsOpen(!isOpen)}
             className="inline-flex items-center justify-center rounded-lg p-2 text-text-light hover:text-sage md:hidden"
             aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
           >
             {isOpen ? (
@@ -77,7 +117,14 @@ export function Navbar() {
 
       {/* Menu mobile — panneau plein écran (hors du header pour éviter le contexte backdrop-blur) */}
       {isOpen && (
-        <div className="fixed inset-x-0 top-[65px] bottom-0 z-50 bg-[#FCF9F5] md:hidden">
+        <div
+          ref={menuRef}
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu de navigation"
+          className="fixed inset-x-0 top-[65px] bottom-0 z-50 bg-[#FCF9F5] md:hidden"
+        >
           <ul className="flex flex-col items-center gap-6 pt-12">
             {navLinks.map((link) => (
               <li key={link.href}>
