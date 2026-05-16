@@ -68,7 +68,7 @@ export function ArticleToc({ items }: ArticleTocProps) {
             aria-hidden="true"
           />
         </button>
-        {isOpen && (
+        <div className={`toc-mobile-content ${isOpen ? "toc-mobile-open" : ""}`}>
           <ol className="toc-mobile-list">
             {tocH2.map((item) => (
               <li key={item.id}>
@@ -82,7 +82,7 @@ export function ArticleToc({ items }: ArticleTocProps) {
               </li>
             ))}
           </ol>
-        )}
+        </div>
       </nav>
 
       {/* Desktop: sticky sidebar */}

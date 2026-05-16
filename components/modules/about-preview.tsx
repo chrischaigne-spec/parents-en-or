@@ -21,6 +21,7 @@ export function AboutPreview() {
                 width={192}
                 height={240}
                 className="h-full w-full object-cover object-top"
+                priority
               />
             </div>
 
