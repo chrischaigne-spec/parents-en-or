@@ -3,6 +3,7 @@
 import { navLinks, siteConfig } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -72,8 +73,17 @@ export function Navbar() {
           {/* Logo / Nom du site */}
           <Link
             href="/"
-            className="font-heading text-xl font-bold text-sage md:text-2xl"
+            className="flex items-center gap-2 font-heading text-xl font-bold text-sage md:text-2xl"
           >
+            <Image
+              src="/images/logo-parents-en-or.webp"
+              alt=""
+              width={48}
+              height={48}
+              className="h-10 w-auto md:h-12"
+              aria-hidden="true"
+              priority
+            />
             {siteConfig.name}
           </Link>
 
