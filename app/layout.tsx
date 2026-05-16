@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Quicksand } from "next/font/google";
+import Script from "next/script";
 
 import { Footer } from "@/components/modules/footer";
 import { WebsiteJsonLd } from "@/components/modules/json-ld";
@@ -74,6 +75,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${quicksand.variable} ${inter.variable}`}>
+      <head>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="e53e746e-a734-43ed-952a-e411cf2d4a0d"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-screen bg-cream font-body text-text antialiased">
         {/* Données structurées JSON-LD globales */}
         <WebsiteJsonLd />
