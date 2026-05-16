@@ -18,7 +18,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Qui suis-je — Sandra, maman et scientifique",
   description:
-    "Sandra, maman de deux garçons en IEF, scientifique de formation (immunologie, microbiologie). Elle décrypte la parentalité à travers la science et l'esprit critique depuis 2019.",
+    "Sandra, maman de deux garçons, scientifique de formation. Elle décrypte la parentalité à travers la science et l'esprit critique depuis 2019.",
   openGraph: {
     title: "Qui suis-je — Sandra, fondatrice de Parents en Or",
     description:

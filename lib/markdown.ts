@@ -28,7 +28,12 @@ function formatInline(text: string): string {
     .replace(/\*(.*?)\*/g, "<em>$1</em>")
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
-      '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+      (_match: string, linkText: string, url: string) => {
+        const isExternal = /^https?:\/\//.test(url);
+        return isExternal
+          ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`
+          : `<a href="${url}">${linkText}</a>`;
+      }
     );
 }
 
@@ -175,7 +180,9 @@ function parseCalloutBlock(variant: string, lines: string[]): string {
     .map((l) => `<p>${formatInline(l)}</p>`)
     .join("\n  ");
 
-  return `<aside class="callout callout-${variant}" role="note">
+  const role = variant === "warning" ? "alert" : "note";
+
+  return `<aside class="callout callout-${variant}" role="${role}">
   ${content}
 </aside>`;
 }

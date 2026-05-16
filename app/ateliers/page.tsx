@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Ateliers",
   description:
     "Les ateliers Parents en Or arrivent bientôt. Des formations parentalité basées sur la science, conçues par Sandra.",
+  openGraph: {
+    title: "Ateliers — Parents en Or",
+    description:
+      "Des formations parentalité basées sur la science, conçues par Sandra. Bientôt disponibles.",
+    url: "https://parents-en-or.fr/ateliers",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ateliers — Parents en Or",
+    description:
+      "Des formations parentalité basées sur la science, conçues par Sandra. Bientôt disponibles.",
+  },
 };
 
 export default function AteliersPage() {

@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: "Parents en Or",
   description:
-    "Parentalité bienveillante fondée sur la science. Sandra, maman et passionnée de développement de l'enfant, partage des outils concrets pour accompagner vos enfants avec respect et confiance.",
+    "Parentalité bienveillante fondée sur la science. Sandra partage des outils concrets pour accompagner vos enfants avec respect et confiance.",
   url: "https://parents-en-or.fr",
   author: {
     name: "Sandra",

@@ -75,6 +75,7 @@ export function ArticleToc({ items }: ArticleTocProps) {
                 <button
                   onClick={() => handleClick(item.id)}
                   className={activeId === item.id ? "toc-active" : ""}
+                  aria-current={activeId === item.id ? "location" : undefined}
                 >
                   {item.text}
                 </button>
@@ -93,6 +94,7 @@ export function ArticleToc({ items }: ArticleTocProps) {
               <button
                 onClick={() => handleClick(item.id)}
                 className={activeId === item.id ? "toc-active" : ""}
+                aria-current={activeId === item.id ? "location" : undefined}
               >
                 {item.text}
               </button>
