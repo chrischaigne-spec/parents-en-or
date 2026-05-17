@@ -1,5 +1,6 @@
 import { navLinks, siteConfig } from "@/lib/constants";
 import { Heart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -11,15 +12,15 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Colonne 1 — Marque */}
           <div>
-            <Link
-              href="/"
-              className="font-heading text-xl font-bold text-sage"
-            >
-              {siteConfig.name}
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo-full.webp"
+                alt={siteConfig.name}
+                width={623}
+                height={160}
+                className="h-16 w-auto md:h-20"
+              />
             </Link>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-light">
-              {siteConfig.author.description}
-            </p>
           </div>
 
           {/* Colonne 2 — Navigation */}

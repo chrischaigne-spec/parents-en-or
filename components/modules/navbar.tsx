@@ -3,6 +3,7 @@
 import { navLinks, siteConfig } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -66,15 +67,26 @@ export function Navbar() {
     <>
       <header className="sticky top-0 z-50 border-b border-sage/10 bg-cream/80 backdrop-blur-md">
         <nav
-          className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-4"
+          className="container mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
           aria-label="Navigation principale"
         >
           {/* Logo / Nom du site */}
           <Link
             href="/"
-            className="font-heading text-xl font-bold text-sage md:text-2xl"
+            className="flex items-center gap-2 sm:gap-3"
           >
-            {siteConfig.name}
+            <Image
+              src="/images/logo-icon.webp"
+              alt=""
+              width={115}
+              height={120}
+              className="h-10 w-auto sm:h-12 md:h-16"
+              aria-hidden="true"
+              priority
+            />
+            <span className="font-heading text-xl font-bold text-sage sm:text-2xl md:text-3xl">
+              {siteConfig.name}
+            </span>
           </Link>
 
           {/* Navigation desktop */}
@@ -123,7 +135,7 @@ export function Navbar() {
           role="dialog"
           aria-modal="true"
           aria-label="Menu de navigation"
-          className="fixed inset-x-0 top-[65px] bottom-0 z-50 bg-[#FCF9F5] md:hidden"
+          className="fixed inset-x-0 top-[65px] bottom-0 z-50 bg-[#FCF9F5] sm:top-[81px] md:hidden"
         >
           <ul className="flex flex-col items-center gap-6 pt-12">
             {navLinks.map((link) => (
