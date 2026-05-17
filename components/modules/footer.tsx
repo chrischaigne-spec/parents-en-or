@@ -12,14 +12,23 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           {/* Colonne 1 — Marque */}
           <div>
-            <Link href="/" className="inline-block">
+            <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/images/logo-full.webp"
-                alt={siteConfig.name}
-                width={623}
-                height={160}
-                className="h-16 w-auto md:h-20"
+                src="/images/logo-icon.webp"
+                alt=""
+                width={115}
+                height={120}
+                className="h-14 w-auto md:h-16"
+                aria-hidden="true"
               />
+              <div className="flex flex-col">
+                <span className="font-heading text-xl font-bold text-sage md:text-2xl">
+                  {siteConfig.name}
+                </span>
+                <span className="text-[0.65rem] tracking-wide text-text-light md:text-xs">
+                  La parentalité éclairée par la science
+                </span>
+              </div>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-light">
               {siteConfig.author.description}
