@@ -13,11 +13,20 @@ export function Navbar() {
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
+  const [headerHeight, setHeaderHeight] = useState(73);
 
   // Fermer le menu mobile lors d'un changement de route
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
+
+  // Mesurer la hauteur du header pour positionner le menu mobile
+  useEffect(() => {
+    if (headerRef.current) {
+      setHeaderHeight(headerRef.current.offsetHeight);
+    }
+  }, []);
 
   // Empêcher le scroll du body quand le menu mobile est ouvert
   useEffect(() => {
@@ -65,7 +74,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-sage/10 bg-cream/80 backdrop-blur-md">
+      <header ref={headerRef} className="sticky top-0 z-50 border-b border-sage/10 bg-cream/80 backdrop-blur-md">
         <nav
           className="container mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
           aria-label="Navigation principale"
@@ -135,7 +144,8 @@ export function Navbar() {
           role="dialog"
           aria-modal="true"
           aria-label="Menu de navigation"
-          className="fixed inset-x-0 top-[65px] bottom-0 z-50 bg-[#FCF9F5] sm:top-[81px] md:hidden"
+          className="fixed inset-x-0 bottom-0 z-50 bg-[#FCF9F5] md:hidden"
+          style={{ top: headerHeight }}
         >
           <ul className="flex flex-col items-center gap-6 pt-12">
             {navLinks.map((link) => (
