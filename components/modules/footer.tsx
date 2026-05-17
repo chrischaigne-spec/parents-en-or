@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-sage/10 bg-white">
-      <div className="container mx-auto max-w-5xl px-4 py-12">
+      <div className="container mx-auto max-w-7xl px-4 py-12">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Colonne 1 — Marque */}
           <div>
@@ -21,6 +21,9 @@ export function Footer() {
                 className="h-16 w-auto md:h-20"
               />
             </Link>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-light">
+              {siteConfig.author.description}
+            </p>
           </div>
 
           {/* Colonne 2 — Navigation */}
